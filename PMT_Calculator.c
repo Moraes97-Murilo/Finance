@@ -4,15 +4,15 @@
 
 int main(){
     float pv, i, n, pmt;
-    printf("Digite o saldo devedor: ");
+    printf("Enter the present value(USD): ");
     scanf("%f", &pv);
-    printf("Digite o numero de parcelas: ");
+    printf("Enter the number of installments: ");
     scanf("%f", &n);
-    printf("Digite a taxa de juros: ");
+    printf("Enter interest rate: ");
     scanf("%f", &i);
     i = i /100 ;
     pmt = pv*(((pow((1+i),n))*i)/((pow((1+i),n))-1));
     
-    printf("O valor das parcelas ficou %f reais. \n", pmt);
+    printf("The installment value is %f USD. \n", pmt);
 system("pause");
 }
